@@ -32,7 +32,7 @@ func (l *LinkedList) Insert(value int) {
 	l.PrintListData()
 }
 
-//DeleteFirst - removes the first element from our linked list
+// DeleteFirst - removes the first element from our linked list
 func (l *LinkedList) DeleteFirst() {
 	l.Head = l.Head.NextNode
 	l.Length--
@@ -61,7 +61,7 @@ func (l LinkedList) PrintListData() {
 	fmt.Printf("\n")
 }
 
-//List - iterates through all of the elements in our linked list and prints them
+// List - iterates through all of the elements in our linked list and prints them
 func (l *LinkedList) List() {
 	current := l.Head
 	for current != nil {
